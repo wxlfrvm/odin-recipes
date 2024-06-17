@@ -1,0 +1,133 @@
+body {
+    font-family: Helvetica, sans-serif;
+    text-align:center; 
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 3px;
+    
+    /* background-color: hsl(0, 0%, 75%) */
+}
+
+.kontener {
+  border-color: hsl(0,0%,15%);
+  background-color: hsl(0, 0%, 95%);
+  border: 2px;
+  border-style: solid;
+  padding: 5px 5px 5px 5px ;
+  margin: 0;  
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 900;
+  font-style: oblique;
+  border: 1px;
+  border-style: solid;
+  /* border-color: grey; */
+  margin: 0;
+  width: 100%;
+  padding: 8px 0;
+  background-color: hsl(0, 0%, 20%);
+  color: #fff;
+  margin-bottom: 5px; 
+  
+}
+
+
+img{
+  margin: 6px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  margin: 8px;
+}
+
+ul.listaprzepisy {
+  list-style-position: inside;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+li.przepis {
+  list-style-type: none;
+  /* padding: 1px 0; */
+  border: 1px;
+  border-style: solid;
+  margin: -1px auto;
+  padding: 1px auto;
+  margin-left: 0; 
+}
+
+/* li.przepis:hover {
+  background-color: hsl(0, 0%, 85%);
+} */
+
+img {
+  width: 400 px;
+  height: auto;
+}
+
+li a {
+  text-decoration: none;
+  color: hsl(180, 7%, 20%);
+  font-size: 24px;
+}
+
+li.przepis:hover {
+  font-weight: 800;
+  color: hsl(180, 20%, 36px);
+  background-color: hsl(0, 0%, 85%);
+  
+}
+
+body {
+  background-color: hsl(0, 0%, 85%);
+}
+
+.dolewej {
+  text-align: left;
+  background-color: hsl(0, 0%, 90%);  
+}
+
+li {
+  padding: 4px 0;
+  margin: 0 14px 0 5px; 
+}
+
+a.goback {
+  text-decoration: none;
+  color: hsl(0, 0%, 25%);
+  border: 1px;
+  border-style: solid;
+  padding: 5px;
+  background-color: hsl(0, 0%, 75%);
+  text-align: left;
+}
+
+a.goback:hover {
+  /* font-weight: 800; */
+  color: hsl(0,0%,30%);
+  border: 5px;
+  border-style: solid;
+}
+
+.pepe {
+  color: hsl(0,0%,25%);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  padding: 8px;
+  background-color: hsl(0, 0%, 75%);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 20px;  
+}
