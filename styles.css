@@ -1,16 +1,27 @@
+/* <palette>
+  <color name="Poppy" hex="da2c38" r="218" g="44" b="56" />
+  <color name="Dark spring green" hex="226f54" r="34" g="111" b="84" />
+  <color name="Pistachio" hex="87c38f" r="135" g="195" b="143" />
+  <color name="Lemon chiffon" hex="f4f0bb" r="244" g="240" b="187" />
+  <color name="Bistre" hex="43291f" r="67" g="41" b="31" />
+</palette> */
+
+
+
+
 body {
     font-family: Helvetica, sans-serif;
     text-align: center; 
     max-width: 600px;
     margin: 0 auto;
     margin-top: 3px;
-    
+    background-color: #D0F1F9;
     /* background-color: hsl(0, 0%, 75%) */
 }
 
 .kontener {
-  border-color: hsl(0,0%,15%);
-  background-color: hsl(0, 0%, 95%);
+  border-color: #0a090c;
+  background-color: #90ddf0;
   border: 2px;
   border-style: solid;
   padding: 5px 5px 5px 5px ;
@@ -24,12 +35,12 @@ h1 {
   font-style: oblique;
   border: 1px;
   border-style: solid;
-  /* border-color: grey; */
+  border-color:#0a090c;
   margin: 0;
   width: 100%;
   padding: 8px 0;
-  background-color: hsl(0, 0%, 20%);
-  color: #fff;
+  background-color: #07393c;
+  color: #f0edee;
   margin-bottom: 5px; 
   
 }
@@ -37,19 +48,43 @@ h1 {
 .lorem {
   text-align: justify;
   padding: 6px;
-  font-size: 16px;
-  
+  font-size: 16px;  
 }
+
+.italics {
+  font-style: italic;
+}
+.bolds {
+  font-weight: 700;
+}
+.bolds:hover {
+ font-style: italic;
+}
+
 
 img{
   margin: 6px;
+}
+
+p.choose {
+  font-size: 24px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transform: rotate(-6deg);
+  margin: 36px;
+  letter-spacing: 5px;
+  font-style: italic;
+  font-weight: 900;
+  background: -webkit-linear-gradient(12deg, #07393c, #2c666e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
 }
 
 h3 {
   font-size: 18px;
   font-weight: 500;
   text-align: left;
-  margin: 8px;
+  margin: 12px;
 }
 
 .listaprzepisy {
@@ -60,14 +95,23 @@ h3 {
   padding: 0;
 }
 
-li.przepis {
+.przepis {
+  display:block;
   list-style-type: none;
   /* padding: 1px 0; */
-  border: 1px;
+  border: 2px;
   border-style: solid;
   margin: -1px auto;
-  padding: 1px auto;
   margin-left: 0; 
+
+  border-color: #90ddf0;
+  /* border-style: hidden; */
+  font-weight: 800;
+  text-transform: uppercase;
+  flex: 1;
+  /* margin: 0 -1px; */
+  background-color: #2c666e;
+  color: #f0edee;
 }
 
 /* li.przepis:hover {
@@ -75,50 +119,96 @@ li.przepis {
 } */
 
 img {
-  width: 400 px;
+  max-width: 98%;
   height: auto;
-}
-
-.przepis {
-  flex: 1;
-  margin: 0 -1px;
 }
 
 a {
   text-decoration: none;
-  color: hsl(180, 7%, 20%);
+  color: #f0edee;
   font-size: 24px;
   text-align: auto;
   display: block;
-
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
-li.przepis:hover {
+li a:hover {
+  font-weight: 1000;
+  color:#0a090c;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #f0edee;
+  -webkit-text-fill-color: #0a090c;
+  paint-order: stroke fill;
+}
+
+.przepis:hover {
   font-weight: 800;
-  color: hsl(180, 20%, 36px);
-  background-color: hsl(0, 0%, 85%);  
+  /* color: #0a090c; */
+  /* background-color: hsl(0, 0%, 85%);   */
   /* padding-bottom: 0%;
   margin-bottom: 5px; */
+  background-position: center;
+  background-size: 100%;
+  /* transform: rotate(-6deg); */
+  letter-spacing: 5px;
+
 }
-li.pizza:hover {
+
+/* li.przepis:hover{
+  color:#0a090c;
+  display: block;
+} */
+
+
+li.przepis.pizza:hover{
+  background-image: url("../img/pizza.png");
   background-color: hsl(39, 100%, 67%);  
+  /* color:#0a090c; */
 }
-li.lasagna:hover {
+
+.przepis.lasagna:hover {
+  background-image: url("../img/lasagna.png");
   background-color: hsl(0, 100%, 67%);  
 }
-li.burger:hover {
+.przepis.burger:hover {
+  background-image: url("../img/burger.png");
   background-color: hsl(123, 100%, 67%);  
 }
 
-
-body {
-  background-color: hsl(0, 0%, 85%);
+h1.pizza:hover {
+  background-color: hsl(39, 100%, 67%);    
+  color: hsl(0, 0%, 20%);
+}
+h1.lasagna:hover {
+  background-color: hsl(0, 100%, 67%);    
+  color: hsl(0, 0%, 20%);
+}
+h1.burger:hover {
+  background-color: hsl(123, 100%, 67%);    
+  color: hsl(0, 0%, 20%);
 }
 
+.pepe {
+  color: #f0edee;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  padding: 8px;
+  background-color: #2c666e;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .dolewej {
   text-align: left;
-  background-color: hsl(0, 0%, 90%);  
+  background-color: #BAEAF5;
+  padding: 40px auto;  
+}
+h3.dolewej {
+  padding: 12px;
+  margin: auto;
+  margin-bottom: 6px;
 }
 
 li {
@@ -129,11 +219,11 @@ li {
 
 a.goback {
   text-decoration: none;
-  color: hsl(0, 0%, 25%);
+  color: #07393c;
   border: 1px;
   border-style: solid;
   padding: 5px;
-  background-color: hsl(0, 0%, 75%);
+  background-color: #D0F1F9;
   text-align: auto; 
   display: inline;
   margin-bottom: 4px;
@@ -141,33 +231,24 @@ a.goback {
 
 a.goback:hover {
   /* font-weight: 800; */
-  color: hsl(0,0%,30%);
+  color: #2c666e;
   border: 5px;
   border-style: solid;
 }
 
-.pepe {
-  color: hsl(0,0%,25%);
-  font-size: 20px;
-  font-weight: 600;
-  text-align: left;
-  padding: 8px;
-  background-color: hsl(0, 0%, 75%);
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-
 ol,
 ul {
   margin-top: 0;
-  margin-bottom: 20px;  
+  margin-bottom: 16px;
+  /* padding-bottom: 6px; */
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 @media (max-width: 700px) {
-  ul li,
+  /* ul li,
   li a,
-  a,
+  a, */
   .listaprzepisy{
     display: block;
     padding: 5px;
