@@ -21,11 +21,6 @@ body {
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; 
     background-attachment: fixed;
-    /*
-    
-    /* background-color: hsl(0, 0%, 75%) */
-    
-    /* overflow: hidden; /* Hide scrollbars */
     overflow-y: scroll;
 }
 
@@ -37,7 +32,7 @@ body {
   border: 12px;
   border-style: hidden;
   border-color: #086641;
-  padding: 8px 10px;
+  padding: 8px 8px;
   border-radius: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -58,7 +53,7 @@ h1 {
   margin-bottom: 8px; 
   text-transform: uppercase;
   letter-spacing: 12px;
-  background-image: linear-gradient(90deg, #086641,#6A994E);
+  background-image: linear-gradient(90deg, #902B27,#AE4541);
   border-radius: 15px 15px 0px 0px;
 
 }
@@ -78,13 +73,13 @@ p {
 }
 
 p.dolewej {
-  padding: 10px;
+  padding: 10px 16px;
+
 }
 
 
 .lorem {
   text-align: justify;
-  padding: 6px;
   margin-top: 2px;
   font-size: 16px;  
 }
@@ -98,11 +93,11 @@ p.dolewej {
 
 
 p.choose {
-  font-size: 24px;
+  font-size: 16px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  transform: rotate(-6deg);
+  transform: rotate(-2deg);
   margin: 36px;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   font-style: italic;
   font-weight: 900;
   background: -webkit-linear-gradient(12deg, #086641, #6A994E);
@@ -111,28 +106,25 @@ p.choose {
   text-transform: uppercase;
   color:#6A994E;
 
-}
 
-h3 {
-  font-size: 18px;
-  font-weight: 500;
-  text-align: left;
-  margin: 12px;
 }
 
 .listaprzepisy {
   list-style-position: inside;
-  padding: 10px;
-  margin-bottom: 0;
+  padding: 0px;
+  margin-bottom: 16px;
   display: flex;
+  margin-top: 4px;
+  
 }
 
 .przepis {
   display:block;
   list-style-type: none;
-  border: 2px;
+  border: 1px;
   border-style: solid;
-  border-radius: 15px;
+  border-top: 0;
+  border-bottom: 0;;
   margin: -1px auto;
   margin-left: 0; 
   border-color: #F2E8CFFF;
@@ -143,16 +135,17 @@ h3 {
   color: #f0edee;
 }
 
-/* li.przepis:hover {
-  background-color: hsl(0, 0%, 85%);
-} */
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 500px;
   padding:0;
   margin-bottom:8px;
   border:0;
+  object-fit: cover;
+  object-position: center;
+
+  
 }
 
 li a {
@@ -161,8 +154,8 @@ li a {
   font-size: 24px;
   text-align: auto;
   display: block;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 a.rlink{
@@ -179,8 +172,8 @@ a.rlink{
 li a:hover {
   font-weight: 1000;
   color:#0a090c;
-  -webkit-text-stroke-width: 5px;
-  -webkit-text-stroke-color: #0a090c;
+  -webkit-text-stroke-width: 7px;
+  -webkit-text-stroke-color: #BC4749;
   -webkit-text-fill-color: #f0edee;
   paint-order: stroke fill;
 }
@@ -223,9 +216,15 @@ li.przepis.pizza:hover{
   text-align: left;
   background-color: #CDD993;
   padding: 40px auto;  
+  margin-top: 0;
+  padding-top: 8px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
 }
+
 .ostatni{
   border-radius: 0 0 15px 15px;
+  margin-bottom: 0;
 }
 h3.dolewej {
   padding: 12px;
@@ -233,11 +232,15 @@ h3.dolewej {
   margin-bottom: 8px;
 }
 
-li {
+.dolewej li{
   padding: 4px 0;
   margin: 0 14px 0 5px; 
 }
 
+.btngoback{
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
 
 a.goback {
   text-decoration: none;
@@ -245,32 +248,20 @@ a.goback {
   border: 1px;
   border-style: solid;
   padding: 5px;
-  background-color: #A7C957;
+  background-color: #CDD993;
   text-align: auto; 
   display: inline;
   margin-bottom: 8px;
-  /* position: absolute;
-  top: 12px; */
-  /* padding: 60px; */
-  margin-bottom: 6px;
+  margin-top: 10px;
 }
 
 a.goback:hover {
   /* font-weight: 800; */
-  color: #6A994E;
+  color: #086641;
   border: 5px;
   border-style: solid;
 }
 
-
-ol,
-ul {
-  margin-top: 0;
-  /* margin-bottom: 16px; */
-  /* padding-bottom: 6px; */
-  padding-top: 8px;
-  padding-bottom: 12px;
-}
 
 @media (max-width: 700px) {
   /* ul li,
