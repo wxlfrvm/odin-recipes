@@ -269,7 +269,20 @@ a.goback:hover {
   a, */
   .listaprzepisy{
     display: block;
-    padding: 5px;
+    padding: 0;
     margin: auto;
   } 
+
+  .przepis {
+    display:block;
+    list-style-type: none;
+    border: 2px;
+    border-style: solid;
+    border-color: #F2E8CFFF;
+    font-weight: 800;
+    background-color: #6A994E;
+    color: #f0edee;
+    margin: 0;
+  }
+  
 }
